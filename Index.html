@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="dv" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ކަތިވަޅި - މަނަދޫ</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thaana:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ފަރުމާ ފޮންޓް ސެޓިންގް */
+        @font-face {
+            font-family: 'Faruma';
+            src: local('Faruma'), local('MV Waheed'), local('Noto Sans Thaana');
+        }
+
+        * {
+            box-sizing: border-box;
+            /* އިސްކަންދޭނީ ފަރުމާ ފޮންޓަށް */
+            font-family: 'Faruma', 'Noto Sans Thaana', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0fdf4; /* ފަނޑު ފެހި ބެކްގްރައުންޑް */
+            color: #1a2f23;
+            line-height: 2; /* ފަރުމާ ފޮންޓުގައި ޖާގަ ބޮޑުކޮށްލުމުން ކިޔަން ފަސޭހަވާނެ */
+            direction: rtl;
+            text-align: right;
+        }
+
+        /* Header - ގަދަ ފެހި */
+        header {
+            background-color: #14532d;
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 8px solid #166534;
+        }
+
+        .logo {
+            font-size: 60px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .tagline {
+            font-size: 18px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        /* Navigation */
+        nav {
+            background: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #14532d;
+            font-weight: 700;
+            font-size: 19px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #22c55e;
+        }
+
+        /* 3 Column Layout */
+        .container {
+            max-width: 1250px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr; 
+            gap: 25px;
+        }
+
+        .column {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        /* މަނަދޫ ކޮލަމް (މެދު) */
+        .manadhoo-col {
+            border-top: 6px solid #14532d;
+        }
+
+        h3 {
+            color: #14532d;
+            border-bottom: 2px solid #f0fdf4;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        /* ސުރުޚީތަކުގެ ލިންކް */
+        .news-card {
+            border-bottom: 1px solid #f0fdf4;
+            padding: 15px 0;
+        }
+
+        .news-card:last-child { border: none; }
+
+        .news-card a {
+            text-decoration: none;
+            color: #14532d;
+            font-weight: 700;
+            font-size: 19px;
+            transition: 0.2s;
+            display: block;
+        }
+
+        /* ސުރުޚީއަށް ފިތާލުމުން ބަދަލުވާ ކުލަ */
+        .news-card a:hover, .news-card a:active {
+            color: #22c55e;
+            transform: translateX(-3px);
+        }
+
+        .main-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #14532d;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        /* މޮބައިލް ފޯނަށް */
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .logo { font-size: 45px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="logo">ކަތިވަޅި</h1>
+    <div class="tagline">މަނަދޫގެ ހަގީގީ ޚަބަރުތައް ކޮށާލުމަށް...</div>
+</header>
+
+<nav>
+    <a href="#">ފަލަސުރުޚީ</a>
+    <a href="#">މަނަދޫ</a>
+    <a href="#">އަތޮޅުތެރެ</a>
+    <a href="#">ކުޅިވަރު</a>
+</nav>
+
+<div class="container">
+    
+    <aside class="column">
+        <h3>ފަލަސުރުޚީ</h3>
+        <div class="news-card"><a href="#">ރާއްޖޭގެ ބާޒާރުގައި މަހުގެ އަގު ހެޔޮވެއްޖެ</a></div>
+        <div class="news-card"><a href="#">ސްކޫލް ބަންދަށްފަހު ކިޔެވުން މިއަދު ފަށައިފި</a></div>
+        <div class="news-card"><a href="#">ސިއްހީ ދާއިރާއަށް އާ ކުރިއެރުންތަކެއް</a></div>
+    </aside>
+
+    <main class="column manadhoo-col">
+        <h3>މަނަދޫ</h3>
+        <div style="background:#e2f3e7; width:100%; height:250px; border-radius:10px; margin-bottom:15px; display:flex; align-items:center; justify-content:center; color:#14532d; font-weight:bold;">
+            ފޮޓޯ މިތަނަށް
+        </div>
+        
+        <div class="news-card">
+            <a href="#" style="font-size: 26px;">މަނަދޫގެ އާ ބަނދަރުގެ މަސައްކަތް ބާރުގަދަވަނީ</a>
+        </div>
+        <p>މަނަދޫގެ ރައްޔިތުން ގިނަ ދުވަސްތަކެއް ވަންދެން އިންތިޒާރު ކުރަމުން އައި އާ ބަނދަރުގެ މަސައްކަތް މިހާރު ވަނީ ނިމުމަކާ ގާތްވެފައެވެ. މި މަޝްރޫއުގެ ސަބަބުން ރަށުގެ އިގްތިސާދަށް ބޮޑު ބަދަލެއް އަންނާނެއެވެ.</p>
+    </main>
+
+    <aside class="column">
+        <h3>ކޮށާލި ޚަބަރު</h3>
+        <div class="news-card"><a href="#">ދުނިޔޭގެ ތެލުގެ އަގަށް ބޮޑު ބަދަލެއް</a></div>
+        <div class="news-card"><a href="#">މޫސުން: އުތުރުގެ ބައެއް ރަށްތަކަށް ޔެލޯ އެލާޓް</a></div>
+        <div class="news-card"><a href="#">ޓެކްނޮލޮޖީ: އާ އޭއައި ސިސްޓަމެއް ތަޢާރަފްކޮށްފި</a></div>
+    </aside>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 ކަތިވަޅި ނިއުސް - މަނަދޫ | ހުރިހާ ހައްގަކަށް އިހުތިރާމް ކުރަން.</p>
+</footer>
+
+</body>
+</html>
